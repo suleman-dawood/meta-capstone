@@ -1,35 +1,28 @@
 import React from 'react';
-import { HStack, Link, Icon} from '@chakra-ui/react';
+import { HStack, Link, Icon, Box, Flex, Spacer} from '@chakra-ui/react';
 import { FaShoppingCart } from 'react-icons/fa';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { IoPersonCircle } from 'react-icons/io5';
+import theme from '../Themes';
 
 function Header() {
     return (
-        <header className="header">
-            <div className="left-heading-uttons">
-                <HStack spacing={4}>
+        <Flex as="header" className="header" bg={theme.colors.customBlack} color="white" p={20} align="center">
+            <Box className="left-heading-buttons">
                     <Link href="https://facebook.com" isExternal>
-                        <Icon as={HiMenuAlt4} w={6} h={6} />
-                        Menu
+                        <Icon as={HiMenuAlt4} w={50} h={50} />
                     </Link>
-                    <Link href="#profile" isExternal>
-                        <Icon as={IoPersonCircle} w={6} h={6} />
-                        Profile
-                    </Link>
-                </HStack>
-            </div>
-            <div className="center-heading">
+            </Box>
+            <Box flex="1" textAlign="center" fontSize="30px" fontWeight="bold">
                 Majestik
-            </div>
-            <div className="right-heading-button">
-                <Link href="#cart" isExternal>
-                    <Icon as={FaShoppingCart} w={6} h={6} />
-                        Cart
+            </Box>
+            <Box className="right-heading-button">
+                <Link href="#profile" isExternal>
+                        <Icon as={IoPersonCircle} w={50} h={50} />
                 </Link>
-            </div>
-        </header>
-    )
-}
+            </Box>
+        </Flex>
+    );
+}//<Link href="#cart" isExternal><Icon as={FaShoppingCart} w={50} h={50} /></Link>
 
 export default Header;

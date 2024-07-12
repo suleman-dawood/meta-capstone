@@ -1,10 +1,16 @@
+import { Container } from "@chakra-ui/react";
 
 
 function Main() {
     return (
-        <div className="main">
-
-        </div>
+        <Container className="main" height="1200px">
+            <Hero />
+            <Scroller />
+            <Sale />
+            <Category />
+            <Reviews />
+            <About />
+        </Container>
     )
 }
 
