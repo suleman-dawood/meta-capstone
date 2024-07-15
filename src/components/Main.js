@@ -8,6 +8,7 @@ import NavBar from './NavBar';
 import theme from "../Themes";
 import loadImages from "../utils/loadImages";
 import Reviews from "./Reviews";
+import About from './About';
 import reviewsData from '../data/reviews.json';
 
 function Main() {
@@ -23,6 +24,7 @@ function Main() {
                 <Hero />
                 <Scroller portraits={portraits} header="Spring Sale"/>
                 <Reviews header="Our Reviews" reviews={reviews}/>
+                <About />
             </Container>
         </Container>
     )
