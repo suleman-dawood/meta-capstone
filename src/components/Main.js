@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from "@chakra-ui/react";
 import Hero from "./Hero";
+import Header from './Header';
 import Scroller from "./Scroller";
 import Banner from './Banner';
 import NavBar from './NavBar';
@@ -14,10 +15,11 @@ function Main() {
     const reviews = reviewsData;
 
     return (
-        <Container className="main" maxW="container.xl" mx="auto" px={400} height="auto" bg={theme.colors.customWhite} fontSize="20px">
+        <Container className="main" maxW="container.xl" mx="auto" px={0} height="auto" bg={theme.colors.customWhite} fontSize="20px">
             <Container bg={theme.colors.customSilver} >
-                <Banner />
+                <Header />
                 <NavBar />
+                <Banner />
                 <Hero />
                 <Scroller portraits={portraits} header="Spring Sale"/>
                 <Reviews header="Our Reviews" reviews={reviews}/>

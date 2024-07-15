@@ -18,7 +18,6 @@ function App() {
         <Routes>
           <Route path='/' element={
             <>
-              <Header />
               <Main />
               <Footer />
               <Cart />

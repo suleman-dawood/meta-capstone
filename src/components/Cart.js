@@ -9,7 +9,7 @@ function Cart() {
                 bg="white"
                 color="black"
                 boxShadow="xl"  // Adjusted to a thicker shadow
-                border="1px solid black"  // Added outline
+                border="3px solid black"  // Added outline
                 position="fixed"
                 bottom="50px"
                 right="50px"

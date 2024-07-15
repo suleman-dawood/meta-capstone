@@ -3,7 +3,7 @@ import { extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
   colors: {
-    customBlack: '#001024',
+    customBlack: '#100014',
     customWhite: '#EAF1F5',
     customSilver: '#CBC9D7',
     customGray: '#D2D7DF',
