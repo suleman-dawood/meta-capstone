@@ -36,7 +36,7 @@ function Header() {
                 </HStack>
             </Box>
             <Box flex="1" textAlign="center" fontSize="30px" fontWeight="bold">
-                <Link href='#' textDecoration="none" color="white">
+                <Link as={ReactRouterLink} to="/" textDecoration="none" color="white">
                     Majestik
                 </Link>
             </Box>
