@@ -18,11 +18,10 @@ function NavBar() {
     return (
         <Flex as="nav"
          justifyContent={'space-between'}
-         fontSize={30}
          minWidth="100%"
-         px={700}
+         px={500}
          py={10}
-         top={70}
+         top={50}
          position="fixed"
          bg={theme.colors.customPurple}
          color="white">

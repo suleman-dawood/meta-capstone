@@ -21,10 +21,10 @@ function CustomButton({ text, onClick }) {
         <Button
             bg={theme.colors.customPurple} // Corrected theme path from `color` to `colors`
             color="white"
-            padding="8"
+            padding="10"
+            paddingInline={30}
             borderRadius="100"
-            fontSize="24px"
-            width="100%"
+            width="auto"
             _hover={{ bg: theme.colors.customPink,
              }}
             _active={{ bg: theme.colors.customBlack,

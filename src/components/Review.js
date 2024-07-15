@@ -1,27 +1,25 @@
 import React from 'react';
-import { Box, Image, Heading, Text, Flex, VStack, HStack, Badge } from '@chakra-ui/react';
+import { Box, Image, Heading, Text, Flex, VStack, HStack, Spacer } from '@chakra-ui/react';
 import theme from '../Themes';
+import StarRating from './StarRatiing';
 
 function Review({ name, location, rating, title, description, recommends }) {
 
-    return (
-        <Box borderWidth="1px" borderRadius="lg" overflow="hidden" p={4} mb={4} boxShadow="md" minWidth={600}>
-            <Flex alignItems="center" mb={2}>
-                <VStack alignItems="flex-start" spacing={0}>
+    return  (
+        <Box borderWidth="5px" borderRadius="5px" overflowY="hidden" p={8} mb={4} minWidth={500} minHeight={300} display="flex" flexDirection="column" justifyContent="space-between">
+            <VStack alignItems="flex-start" spacing={0}>
+                <HStack alignItems="baseline" spacing={10}>
                     <Heading as="h3" size="sm">{name}</Heading>
-                    <Text fontSize="xs" color="gray.500">{location}</Text>
-                </VStack>
-            </Flex>
-            <Box mt={2}>
-                <HStack spacing={2} mb={2}>
-                    <Badge colorScheme="green">{rating}</Badge>
-                    <Text fontSize="sm" fontWeight="bold">{title}</Text>
+                    <Heading as="h3" size="sm" fontSize="18px">{location}</Heading>
                 </HStack>
-                <Text fontSize="sm" mb={2}>{description}</Text>
-                {recommends && (
-                    <Text fontSize="sm" color="green.500">Recommends this product</Text>
-                )}
+            </VStack>
+            <Box mt={2} flexGrow={1}>
+                <Text fontSize="28" fontWeight="bold" mb="10" align="start">{title}</Text>
+                <Text fontSize="20" mb={2} align="start">{description}</Text>
             </Box>
+            {recommends && (
+                <Text fontSize="sm" paddingEnd={10} align="end" mt="auto">Recommends this product</Text>
+            )}
         </Box>
     );
 };
