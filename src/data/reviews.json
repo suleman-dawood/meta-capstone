@@ -1,0 +1,51 @@
+[
+    {
+      "name": "John Doe",
+      "location": "Ohio",
+      "rating": 4.5,
+      "title": "Excellent Quality and Fit",
+      "description": "I bought a suit from Majestik and I'm very pleased with the quality and fit. It's comfortable and looks great!",
+      "recommends": true
+    },
+    {
+      "name": "Jane Smith",
+      "location": "Columbus, OH",
+      "rating": 5,
+      "title": "Perfect for Special Occasions",
+      "description": "Majestik offers suits that are perfect for weddings and other special occasions. I love their attention to detail.",
+      "recommends": true
+    },
+    {
+      "name": "Michael Johnson",
+      "location": "Dayton, OH",
+      "rating": 4,
+      "title": "Great Customer Service",
+      "description": "The staff at Majestik were very helpful in finding the right suit for me. Excellent customer service!",
+      "recommends": true
+    },
+    {
+      "name": "Emily Davis",
+      "location": "Cincinnati, OH",
+      "rating": 4.5,
+      "title": "Stylish and Comfortable",
+      "description": "I've purchased multiple suits from Majestik and each one is stylish and comfortable. Highly recommended!",
+      "recommends": true
+    },
+    {
+      "name": "David Brown",
+      "location": "Toledo, OH",
+      "rating": 5,
+      "title": "Impressed with the Fit",
+      "description": "The fit of the suit from Majestik is exceptional. It feels tailored to perfection.",
+      "recommends": true
+    },
+    {
+      "name": "Sarah Wilson",
+      "location": "Akron, OH",
+      "rating": 4,
+      "title": "Highly Satisfied",
+      "description": "I'm highly satisfied with my purchase from Majestik. The suit exceeded my expectations.",
+      "recommends": true
+    }
+  ]
+  
