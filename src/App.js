@@ -1,3 +1,10 @@
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -7,10 +14,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />
-      <Footer />
-      <Cart />
+      <Router>
+        <Routes>
+          <Route path='/' element={
+            <>
+              <Header />
+              <Main />
+              <Footer />
+              <Cart />
+            </>
+          } />
+          <Route path='/login' element={<Header/>} />
+        </Routes>
+      </Router>
     </div>
   );
 }
