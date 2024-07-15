@@ -5,8 +5,8 @@ const theme = extendTheme({
   colors: {
     customBlack: '#100014',
     customWhite: '#EAF1F5',
-    customSilver: '#CBC9D7',
-    customGray: '#D2D7DF',
+    customSilver: '#FFFAFF',
+    customGray: '#D2C7DF',
     customPurple: '#200116',
     customPink: '#754789',
     customBlue: '#003459',

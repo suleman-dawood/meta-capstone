@@ -15,7 +15,7 @@ function Main() {
     const reviews = reviewsData;
 
     return (
-        <Container className="main" maxW="container.xl" mx="auto" px={0} height="auto" bg={theme.colors.customWhite} fontSize="20px">
+        <Container className="main" maxW="container.xl" mx="auto" px={0} height="auto" bg={theme.colors.customWhite} fontSize="24px">
             <Container bg={theme.colors.customSilver} >
                 <Header />
                 <NavBar />

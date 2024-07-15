@@ -5,21 +5,21 @@ import { FaShoppingCart } from 'react-icons/fa';
 function Cart() {
     return (
         <Circle
-                size="100px"
+                size="80px"
                 bg="white"
                 color="black"
                 boxShadow="xl"  // Adjusted to a thicker shadow
                 border="3px solid black"  // Added outline
                 position="fixed"
-                bottom="50px"
-                right="50px"
+                bottom="40px"
+                right="40px"
                 zIndex={1}
                 display="flex"
                 justifyContent="center"
                 alignItems="center"
             >
                 <Link href="#cart" isExternal>
-                    <Icon as={FaShoppingCart} w={60} h={60}/>
+                    <Icon as={FaShoppingCart} w={50} h={50}/>
                 </Link>
             </Circle>
     )

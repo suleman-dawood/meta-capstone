@@ -14,7 +14,7 @@ function Header() {
             bg={theme.colors.customBlack}
             color="white"
             py={5}
-            px={30}
+            px={20}
             align="center"
             position="fixed"
             top={0}
@@ -25,13 +25,13 @@ function Header() {
             <Box>
                 <HStack spacing={20} align="center">
                     <Link as={ReactRouterLink} to="/menu">
-                        <Icon as={HiMenu} w={50} h={50} />
+                        <Icon as={HiMenu} w={30} h={30} />
                     </Link>
                     <Link as={ReactRouterLink} to="/profile" >
-                        <Icon as={IoPersonCircle} w={50} h={50} />
+                        <Icon as={IoPersonCircle} w={30} h={30} />
                     </Link>
                     <Link as={ReactRouterLink} to="/wishlist" >
-                        <Icon as={FaHeart} w={45} h={45} />
+                        <Icon as={FaHeart} w={25} h={25} />
                     </Link>
                 </HStack>
             </Box>
@@ -48,7 +48,7 @@ function Header() {
                         borderRadius="10"
                         px={0}
                         py={2}
-                        _hover={{ bg: theme.colors.customSilver }}
+                        _hover={{ bg: theme.colors.customPink }}
                         leftIcon={<FaSearch />}
                     >
                         <Input
@@ -61,7 +61,7 @@ function Header() {
                             px={10}
                             py={2}
                             width={300}
-                            height={40}
+                            height={30}
                             fontSize={18}
                         />
                     </Button>
